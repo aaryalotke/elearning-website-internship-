@@ -114,7 +114,7 @@
   </div>
 </footer> -->
 <footer class="container-fluid bg-dark text-center p-2">
-  <small class="text-white">Copyright &copy; 2022 || Deigned By E-Learning || <a href="#login" data-bs-toggle="modal" data-bs-target="#teacherlogmodalcenter">Teacher Login</a>  </small>
+  <small class="text-white">Copyright &copy; 2022 || Deigned By E-Learning   </small>
 </footer>
 
 <!-- student registeration -->
@@ -129,32 +129,34 @@
       </div>
       <div class="modal-body">
         <!-- form body start -->
-      <form id="sturegform">
+      <form id="sturegform" action="sign_up.php" method="POST">
       <div class="row mb-3">
     <label for="inputName3" class="col-sm-2 col-form-label">Name</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
+      <input type="text" class="form-control" name="inputName3" required>
     </div>
   </div>
   <div class="row mb-3">
     <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
+      <input type="email" class="form-control" name="inputEmail3" required>
     </div>
   </div>
   <div class="row mb-3">
     <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3">
+      <input type="password" class="form-control" name="inputPassword3" required>
+</div><div>
+      <input type="submit" value="Submit">
     </div>
   </div>
 </form>
 <!-- form body end -->
       </div>
-      <div class="modal-footer">
+      <!--<div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Sign Up</button>
-      </div>
+      </div>-->
     </div>
   </div>
 </div>
@@ -171,26 +173,29 @@
       </div>
       <div class="modal-body">
         <!-- form body start -->
-      <form id="stuloginform">
+      <form id="stuloginform" action="studentlog_in.php" method="POST">
   <div class="row mb-3">
     <label for="stulogemail" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="stulogemail">
+      <input type="email" class="form-control" name="stulogemail" required>
     </div>
   </div>
   <div class="row mb-3">
     <label for="stulogpass" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="stulogpass">
+      <input type="password" class="form-control" name="stulogpass" required>
     </div>
+    <div>
+    <input type="submit" value="Submit">
+</div>
   </div>
 </form>
 <!-- form body end -->
       </div>
-      <div class="modal-footer">
+      <!--<div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary" id="stulogbtn">Login</button>
-      </div>
+      </div>-->
     </div>
   </div>
 </div>
@@ -207,29 +212,34 @@
       </div>
       <div class="modal-body">
         <!-- form body start -->
-      <form id="teacherloginform">
+      <form id="teacherloginform" action="teacherlog_in.php" method="POST">
   <div class="row mb-3">
     <label for="teacherlogemail" class="col-sm-2 col-form-label">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="teacherlogemail">
+      <input type="email" class="form-control" name="teacherlogemail" required>
     </div>
   </div>
   <div class="row mb-3">
     <label for="teacherlogpass" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="teacherlogpass">
+      <input type="password" class="form-control" name="teacherlogpass" required>
     </div>
+    <div class="modal-footer">
+    <input type="submit" value="Submit">
+</div>
   </div>
 </form>
 <!-- form body end -->
       </div>
-      <div class="modal-footer">
+      <!--<div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
         <button type="button" class="btn btn-primary" id="teacherlogbtn">Login</button>
-      </div>
+      </div>-->
     </div>
   </div>
 </div>
+
+
 
 
 <script src="js/jquery.min.js"></script>

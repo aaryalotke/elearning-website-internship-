@@ -1,3 +1,9 @@
+
+<?php
+require("connection.php");
+?>
+
+
 <!--start header-->
 <?php
 include('./header.php');
@@ -20,7 +26,25 @@ include('./header.php');
 </div>
 </div>
 
-<!--start contact us-->
+    <main>
+       
+        <section>
+            <br><br>
+            <h2><center>Popular Courses</center></h2>
+            <br><br>
+                <iframe width="33%" height="315" src="https://www.youtube.com/embed/UmnCZ7-9yDY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="33%" height="315" src="https://www.youtube.com/embed/_uQrJ0TkZlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="33%" height="315" src="https://www.youtube.com/embed/vLnPwxZdW4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+                <iframe width="33%" height="315" src="https://www.youtube.com/embed/1Rs2ND1ryYc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="33%" height="315" src="https://www.youtube.com/embed/QLatPwsbDrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="33%" height="315" src="https://www.youtube.com/embed/x0uinJvhNxI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+       
+        
+    </main>
+
+    <!--start contact us-->
 <?php
 include('./contactus.php');
 ?>
@@ -29,4 +53,6 @@ include('./contactus.php');
 <?php
 include('./footer.php');
 ?>
-
+    
+</body>
+</html>

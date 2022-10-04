@@ -34,13 +34,25 @@
       <ul class="navbar-nav custom-nav pl-5">
         <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link">Home</a></li>
         <li class="nav-item custom-nav-item"><a href="courses.php " class="nav-link">Courses</a></li>
-        <li class="nav-item custom-nav-item"><a href=" #" class="nav-link">My Profile</a></li>
-        <li class="nav-item custom-nav-item"><a href=" #" class="nav-link">Logout</a></li>
+        <!-- <li class="nav-item custom-nav-item"><a href=" #" class="nav-link">My Profile</a></li> -->
+        <!-- <li class="nav-item custom-nav-item"><a href=" #" class="nav-link">Logout</a></li> -->
         <li class="nav-item custom-nav-item"><a href="# " class="nav-link" data-bs-toggle="modal" data-bs-target="#stulogmodalcenter">Login</a></li>
         <li class="nav-item custom-nav-item"><a href="# " class="nav-link" data-bs-toggle="modal" data-bs-target="#sturegmodalcenter">SignUp</a></li>
-        <li class="nav-item custom-nav-item"><a href="# " class="nav-link">Feedback</a></li>
+        <!-- <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#stulogmodalcenter">Logout</a></li> -->
+        <li class="nav-item custom-nav-item"><a href="# " class="nav-link" data-bs-toggle="modal" data-bs-target="#teacherlogmodalcenter">Teacher Login</a></li>
        
       </ul>
     </div>
+    <form method="POST">
+    <button name="logout"> Logout</button>
+	</form>
   </div>
 </nav>
+
+<?php
+if(isset($_POST['logout']))
+{
+	session_destroy();
+	header("location: index.php");
+}
+?>
